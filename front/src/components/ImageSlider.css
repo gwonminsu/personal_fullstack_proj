@@ -1,0 +1,45 @@
+.slick-slide img {
+    display: block;
+    margin: auto; /* 이미지를 중앙으로 정렬 */
+    max-width: 100%; /* 이미지가 슬라이더 컨테이너보다 클 경우를 대비해 최대 너비 제한 */
+    height: auto; /* 이미지 비율 유지 */
+}
+
+.image-slider .slide {
+    text-align: center; /* 슬라이드 내부 요소를 중앙 정렬 */
+    padding: 10px; /* 슬라이드 내부의 패딩 */
+    opacity: 0; /* 비활성화된 슬라이드 투명도 */
+    transition: opacity 0.8s ease; /* 부드러운 투명도 전환 */
+}
+
+.image-slider .slick-center .slide {
+    opacity: 1; /* 활성화된 슬라이드는 완전 불투명 */
+}
+
+.slick-slider {
+    position: relative;
+    padding: 20px 0; /* 슬라이더 상하 패딩 조정 */
+    max-width: 1000px;  /* 최대 너비 설정 */
+    margin: auto;      /* 중앙 정렬 */
+}
+
+.slick-dots {
+    bottom: -25px; /* 도트 네비게이션 위치 조정 */
+}
+
+.slick-track {
+    display: flex;
+    align-items: center; /* 슬라이더 항목을 수직 중앙 정렬 */
+}
+
+@media (max-width: 768px) {
+    .image-slider {
+        max-width: 500px;  /* 태블릿 이하에서는 최대 너비를 500px로 설정 */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-slider {
+        max-width: 300px;  /* 모바일에서는 최대 너비를 300px로 설정 */
+    }
+}

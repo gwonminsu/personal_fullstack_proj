@@ -1,0 +1,75 @@
+.home-page-banner {
+    background-color: #f3f4f6; /* 배경 색상 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    border-radius: 10px; /* 테두리 둥글게 설정 */
+    margin-bottom: 20px; /* 아래쪽 여백 설정 */
+    position: relative; /* 이미지 위치 설정을 위해 relative 사용 */
+}
+
+.banner-title {
+    font-size: 24px; /* 제목 글꼴 크기 */
+    font-weight: bold; /* 글꼴 굵기 */
+    margin-bottom: 10px; /* 제목 아래쪽 여백 */
+}
+
+.banner-content {
+    position: absolute; /* 배너 내용을 절대 위치로 설정 */
+    top: 50%; /* 상단에서 50% 위치 */
+    left: 15%; /* 좌측에서 50% 위치 */
+    transform: translate(-50%, -50%); /* 정확한 중앙에 위치하도록 조정 */
+    color: rgb(0, 0, 0); /* 텍스트 색상 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    max-width: 80%; /* 텍스트 최대 너비 설정 */
+}
+
+.banner-description {
+    font-size: 16px; /* 설명 글꼴 크기 */
+    color: #374151; /* 설명 글꼴 색상 */
+    margin-bottom: 20px; /* 설명 아래쪽 여백 */
+}
+
+.banner-image {
+    width: 100%; /* 이미지 최대 너비 */
+    height: auto; /* 이미지 높이 자동 조절 */
+    border-radius: 10px; /* 이미지 테두리 둥글게 설정 */
+}
+
+.banner-image2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+}
+
+.banner-image3 {
+    position: absolute;
+    top: 70%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    width: 18%;
+}
+
+.banner-image4 {
+    position: absolute;
+    top: 70%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    width: 7%;
+}
+
+.banner-image5 {
+    position: absolute;
+    top: 65%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    width: 8%;
+}
+
+.banner-image6 {
+    position: absolute;
+    top: 65%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    width: 3%;
+}

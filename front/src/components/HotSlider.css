@@ -1,0 +1,73 @@
+.hot-slider-container {
+    padding: 20px;
+    background-color: #fff; /* 배경색 */
+    margin: 20px 0; /* 상하 여백 */
+  }
+  
+  .hot-slider-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: color 0.7s ease, text-decoration-color 0.3s ease;
+  }
+
+  .hot-slider-title:hover {
+    color: #d01818; /* 호버 시 색상 변경 */
+    text-decoration: underline; /* 호버 시 밑줄 */
+    text-decoration-color: #d01818; /* 밑줄 색상 */
+  }
+  
+  .hot-slider-item {
+    display: flex; /* Flexbox 레이아웃 적용 */
+    flex-direction: column; /* 자식 요소들을 세로로 정렬 */
+    align-items: center; /* 수평 중앙 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    padding: 10px; /* 패딩 추가 */
+    border-radius: 8px; /* 모서리 둥글게 처리 */
+    background: white; /* 배경색 설정 */
+    margin: 5px; /* 마진 추가 */
+  }
+  
+  .hot-slider-image-container {
+    width: 100%; /* 이미지 컨테이너의 너비 지정 */
+    height: 200px; /* 이미지 컨테이너의 높이 지정 */
+    overflow: hidden; /* 컨테이너를 벗어나는 이미지 숨김 */
+    display: flex; /* 이미지를 가운데 정렬하기 위해 flexbox 사용 */
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+  }
+  
+  .hot-slider-image {
+    width: 200px;
+    max-height: 100%;
+    object-fit: cover; /* 이미지가 컨테이너를 가득 채우도록 설정 */
+    border-radius: 8px; /* 이미지 모서리 둥글게 */
+  }
+  
+  .hot-slider-post-title {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 5px 0; /* 제목의 상하 여백 */
+    transition: color 0.3s ease, text-decoration-color 0.3s ease; /* 색상과 텍스트 장식 색상 변화에 대한 부드러운 전환 효과 */
+  }
+
+  .hot-slider-post-title:hover {
+    color: #ff7f50; /* 호버 시 색상 변경 */
+    text-decoration: underline; /* 호버 시 밑줄 */
+    text-decoration-color: #ff7f50; /* 밑줄 색상 */
+  }
+  
+  .hot-slider-post-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .hot-slider-post-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+  }
+  
