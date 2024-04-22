@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: joonggo
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/joonggo?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+
+  jpa:
+    show-sql: true # 쿼리 보여줄래?
+    open-in-view: false # 영속성 컨텍스트가 뷰 레이어까지 확장되는 것을 방지
+    generate-ddl: true # 테이블 자동으로 만들어줘
+    hibernate:
+      ddl-auto: update # create는 테이블을 드랍하고 다시 만듬
+    properties:
+      hibernate:
+        format_sql: true
+
+  thymeleaf:
+    cache: false # 개발 시에는 false, 배포 시에는 true 설정
+
+  jwt:
+    secret: vmfhaltmskdlstkfkdgodyroqkfwkdbalroqkfwkdbalaaaaaaaaaaaabbbbccccc
+
+  mvc:
+    static-path-pattern: /resources/**
+  web:
+    resources:
+      static-locations: file:///C:/Users/kd061/Desktop/grade7/full_stack_projects/indiviual_proj/storage/
+
+server:
+  port: 7979
